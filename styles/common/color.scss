@@ -1,0 +1,36 @@
+.container {
+}
+
+.container__list {
+  list-style-type: none;
+}
+
+.colorItem {
+  float: left;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-family: monospace;
+  padding: 5px;
+
+  &:hover {
+    position: relative;
+    color: rgba(0, 0, 0, 0);
+
+    .colorItem__remove {
+      visibility: visible;
+    }
+  }
+}
+
+.colorItem__remove {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: sans-serif;
+  font-size: 600%;
+  color: #333;
+  text-align: center;
+  width: 100%;
+  visibility: hidden;
+}
